@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - TechGuru Solutions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-code me-2"></i>TechGuru Solutions
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero Section -->
+    <section class="portfolio-hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold text-white mb-4">Our Portfolio</h1>
+                    <p class="lead text-white-50 mb-4">Discover our innovative projects and digital solutions that have transformed businesses across various industries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-4">Our Projects</h2>
+                    <p class="lead text-muted">Explore our diverse portfolio of successful projects and digital transformations.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8">
+                    <div class="portfolio-filters text-center">
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn active" data-filter="all">All Projects</button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="web">Web Development</button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="mobile">Mobile Apps</button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="cloud">Cloud Solutions</button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="ai">AI & ML</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Projects -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4" id="portfolio-grid">
+                <!-- Web Development Projects -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="web">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <h5 class="fw-bold">E-Commerce Platform</h5>
+                            <p class="text-muted">Modern e-commerce solution with advanced features including payment processing, inventory management, and analytics dashboard.</p>
+                            <div class="portfolio-tags">
+                                <span class="badge bg-primary me-1">React</span>
+                                <span class="badge bg-primary me-1">Node.js</span>
+                                <span class="badge bg-primary">MongoDB</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm mt-3" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="web">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <h5 class="fw-bold">Analytics Dashboard</h5>
+                            <p class="text-muted">Real-time business intelligence dashboard with interactive charts, data visualization, and custom reporting tools.</p>
+                            <div class="portfolio-tags">
+                                <span class="badge bg-primary me-1">Vue.js</span>
+                                <span class="badge bg-primary me-1">Python</span>
+                                <span class="badge bg-primary">PostgreSQL</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm mt-3" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile App Projects -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="mobile">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <h5 class="fw-bold">Fitness Tracking App</h5>
+                            <p class="text-muted">Cross-platform mobile application for fitness tracking with GPS navigation, workout plans, and social features.</p>
+                            <div class="portfolio-tags">
+                                <span class="badge bg-primary me-1">React Native</span>
+                                <span class="badge bg-primary me-1">Firebase</span>
+                                <span class="badge bg-primary">Redux</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm mt-3" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="mobile">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <h5 class="fw-bold">Ride-Sharing App</h5>
+                            <p class="text-muted">Complete ride-sharing platform with real-time tracking, payment integration, and driver-rider matching algorithms.</p>
+                            <div class="portfolio-tags">
+                                <span class="badge bg-primary me-1">Flutter</span>
+                                <span class="badge bg-primary me-1">AWS</span>
+                                <span class="badge bg-primary">Socket.io</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm mt-3" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud Solutions Projects -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="cloud">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <h5 class="fw-bold">Cloud Migration</h5>
+                            <p class="text-muted">Enterprise cloud migration project moving legacy systems to AWS with zero downtime and improved performance.</p>
+                            <div class="portfolio-tags">
+                                <span class="badge bg-primary me-1">AWS</span>
+                                <span class="badge bg-primary me-1">Docker</span>
+                                <span class="badge bg-primary">Kubernetes</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm mt-3" data-bs-toggle="modal" data-bs-target="#projectModal5">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & ML Projects -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="ai">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <h5 class="fw-bold">AI Chatbot</h5>
+                            <p class="text-muted">Intelligent customer service chatbot with natural language processing and machine learning capabilities.</p>
+                            <div class="portfolio-tags">
+                                <span class="badge bg-primary me-1">Python</span>
+                                <span class="badge bg-primary me-1">TensorFlow</span>
+                                <span class="badge bg-primary">NLP</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm mt-3" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-4">Client Testimonials</h2>
+                    <p class="lead text-muted">What our clients say about working with TechGuru Solutions.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="mb-3">"TechGuru Solutions transformed our business with their innovative e-commerce platform. The results exceeded our expectations!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h6 class="fw-bold mb-0">Sai Sasank Vanapalli</h6>
+                                    <small class="text-muted">CEO, Fashion Forward</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="mb-3">"The mobile app they developed for us increased user engagement by 300%. Highly recommended!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h6 class="fw-bold mb-0">Uppalapu Satya Prasanth</h6>
+                                    <small class="text-muted">CTO, HealthTech Inc</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="mb-3">"Professional team, excellent communication, and outstanding results. They delivered our project on time and within budget."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h6 class="fw-bold mb-0">Vemagiri Rajesh</h6>
+                                    <small class="text-muted">Founder, StartupXYZ</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <!-- Modal 1: E-Commerce Platform -->
+    <div class="modal fade" id="projectModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">E-Commerce Platform</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="modal-image">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Project Overview</h6>
+                            <p>A comprehensive e-commerce solution built for a leading fashion retailer. The platform includes advanced features like real-time inventory management, multi-payment gateway integration, and AI-powered product recommendations.</p>
+                            
+                            <h6 class="fw-bold mt-3">Technologies Used</h6>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-1">React</span>
+                                <span class="badge bg-primary me-1">Node.js</span>
+                                <span class="badge bg-primary me-1">MongoDB</span>
+                                <span class="badge bg-primary me-1">Stripe</span>
+                                <span class="badge bg-primary">AWS</span>
+                            </div>
+                            
+                            <h6 class="fw-bold">Key Features</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Responsive design</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Payment processing</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Inventory management</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Analytics dashboard</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Start Similar Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Analytics Dashboard -->
+    <div class="modal fade" id="projectModal2" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Analytics Dashboard</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="modal-image">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Project Overview</h6>
+                            <p>A real-time business intelligence dashboard that provides comprehensive analytics and reporting capabilities. The system processes large datasets and presents insights through interactive visualizations.</p>
+                            
+                            <h6 class="fw-bold mt-3">Technologies Used</h6>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-1">Vue.js</span>
+                                <span class="badge bg-primary me-1">Python</span>
+                                <span class="badge bg-primary me-1">PostgreSQL</span>
+                                <span class="badge bg-primary me-1">D3.js</span>
+                                <span class="badge bg-primary">Redis</span>
+                            </div>
+                            
+                            <h6 class="fw-bold">Key Features</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Real-time data</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Interactive charts</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Custom reports</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Data export</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Start Similar Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional modals for other projects would follow the same pattern -->
+    <!-- Modal 3: Fitness App -->
+    <div class="modal fade" id="projectModal3" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Fitness Tracking App</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="modal-image">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Project Overview</h6>
+                            <p>A comprehensive fitness tracking application that helps users monitor their workouts, track progress, and achieve their fitness goals through personalized plans and social features.</p>
+                            
+                            <h6 class="fw-bold mt-3">Technologies Used</h6>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-1">React Native</span>
+                                <span class="badge bg-primary me-1">Firebase</span>
+                                <span class="badge bg-primary me-1">Redux</span>
+                                <span class="badge bg-primary me-1">GPS</span>
+                                <span class="badge bg-primary">HealthKit</span>
+                            </div>
+                            
+                            <h6 class="fw-bold">Key Features</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Workout tracking</li>
+                                <li><i class="fas fa-check text-success me-2"></i>GPS navigation</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Social features</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Progress analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Start Similar Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Ride-Sharing App -->
+    <div class="modal fade" id="projectModal4" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ride-Sharing App</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="modal-image">
+                                <i class="fas fa-car"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Project Overview</h6>
+                            <p>A complete ride-sharing platform that connects drivers and riders in real-time, featuring advanced matching algorithms, secure payment processing, and comprehensive safety features.</p>
+                            
+                            <h6 class="fw-bold mt-3">Technologies Used</h6>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-1">Flutter</span>
+                                <span class="badge bg-primary me-1">AWS</span>
+                                <span class="badge bg-primary me-1">Socket.io</span>
+                                <span class="badge bg-primary me-1">Stripe</span>
+                                <span class="badge bg-primary">Google Maps</span>
+                            </div>
+                            
+                            <h6 class="fw-bold">Key Features</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Real-time tracking</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Payment integration</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Driver matching</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Safety features</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Start Similar Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Cloud Migration -->
+    <div class="modal fade" id="projectModal5" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cloud Migration</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="modal-image">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Project Overview</h6>
+                            <p>A large-scale enterprise cloud migration project that successfully moved legacy systems to AWS infrastructure with zero downtime, improved performance, and significant cost savings.</p>
+                            
+                            <h6 class="fw-bold mt-3">Technologies Used</h6>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-1">AWS</span>
+                                <span class="badge bg-primary me-1">Docker</span>
+                                <span class="badge bg-primary me-1">Kubernetes</span>
+                                <span class="badge bg-primary me-1">Terraform</span>
+                                <span class="badge bg-primary">Jenkins</span>
+                            </div>
+                            
+                            <h6 class="fw-bold">Key Features</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Zero downtime</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Auto-scaling</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Load balancing</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Start Similar Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: AI Chatbot -->
+    <div class="modal fade" id="projectModal6" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">AI Chatbot</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="modal-image">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Project Overview</h6>
+                            <p>An intelligent customer service chatbot powered by advanced natural language processing and machine learning algorithms, providing 24/7 customer support with human-like interactions.</p>
+                            
+                            <h6 class="fw-bold mt-3">Technologies Used</h6>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-1">Python</span>
+                                <span class="badge bg-primary me-1">TensorFlow</span>
+                                <span class="badge bg-primary me-1">NLP</span>
+                                <span class="badge bg-primary me-1">BERT</span>
+                                <span class="badge bg-primary">Dialogflow</span>
+                            </div>
+                            
+                            <h6 class="fw-bold">Key Features</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Natural language processing</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Multi-language support</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Sentiment analysis</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Integration APIs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Start Similar Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-code me-2"></i>TechGuru Solutions
+                    </h5>
+                    <p class="text-muted">Empowering businesses with innovative technology solutions for a digital future.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>123 Tech Street, Kakinada, Andhra Pradesh, India
+                    </p>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-phone me-2"></i>+91 9392000000
+                    </p>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-envelope me-2"></i>info@techgurusolutions.com
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                        <li><a href="index.html#services" class="text-muted text-decoration-none">Services</a></li>
+                        <li><a href="portfolio.html" class="text-muted text-decoration-none">Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">&copy; 2024 TechGuru Solutions. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-muted mb-0">Privacy Policy | Terms of Service</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Portfolio Filter JavaScript -->
+    <script>
+        // Portfolio filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            item.style.animation = 'fadeInUp 0.6s ease forwards';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
